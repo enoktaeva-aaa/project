@@ -1,0 +1,75 @@
+.header{
+    background-color: rgb(194, 225, 226);
+    color: aqua;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .menu__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(163, 226, 202);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+   }
+   .header__login{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgb(95, 103, 110);
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+    }
+    .header__logo-wrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+       }
+       .header__logo-wrap{
+        text-decoration: none;
+        color: rgb(128, 202, 221);
+       }
+       .header__title{
+        margin: 0;
+       }
+       .header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+       .header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+      
+       .about__button{
+        display: block;
+        padding: 10px;
+        color: rgb(155, 169, 180);
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: auto;
+        margin-right: auto;
+       }
+       .about__wrap-left{
+        display: flex;
+        flex-direction: column;
+       }
+       .header__title{
+        text-decoration: none;
+        align-items: center;
+        color: black;
+        font-size: 50px;
+       }
+         
+    
