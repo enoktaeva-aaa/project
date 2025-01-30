@@ -1,68 +1,120 @@
-.about{
-    display: flex;
-    gap: 10px;
-   }
-   .about__wrap-right{
-    width: 500px;
-    flex-shrink: 0;
-   }
-   .about{
-    background-color: rgb(62, 120, 167);
-     color: rgb(255, 255, 255);
-     padding: 10px;
-    }
-    .specialists__card{
-        width: 350px;
-        padding: 15px;
-        background-color: aliceblue;
-       color: black;
-        box-shadow: 1px 2px 20px 5px #d7d7d7;
-       }
-       .specialists__name{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-       }
-       .specialists__job{
-        margin-top: 0;
-        margin-bottom: 15px;
-        font-size: 14px;
-        font-style: italic;
-       }
-       .specialists__desc{
-        margin-top: 0;
-        margin-bottom: 15px;
-       }
-       .specialists__link{
-        display: block;
-        padding: 10px;
-        background-color: rgb(62, 120, 167);
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        text-align: center;
-       }
-       .specialists__card{
-        display: flex;
-        flex-direction: column;
-       }
-       .specialists__link{
-        margin-top: auto;
-       }
-       .specialists__image{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-       }
-      .programs__kard{
-        width: 350px;
-        padding: 15px;
-        background-color: antiquewhite;
-        color: black;
-        box-shadow: 1px 2px 20px 5px #d7d7d7;
-       }
-       .programs__list{
-        display: flex;
-       }
-       
+.about {
+  display: flex;
+  gap: 10px;
+}
+
+.about__wrap-right {
+  width: 500px;
+  flex-shrink: 0;
+}
+
+.about__job {
+  min-width: 300px;
+}
+
+.about {
+  
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.specialists__card {
+  width: 350px;
+  padding: 15px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.specialists__name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.specialists__job {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.specialists__desc {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.specialists__link {
+  display: block;
+  padding: 10px;
+  background-color: rgb(62, 120, 167);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+}
+
+.specialists__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialists__link {
+  margin-top: auto;
+}
+
+.specialists__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.programs__kard {
+  width: 350px;
+  padding: 15px;
+  background-color: antiquewhite;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.programs__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.price__item {
+  width: 350px;
+  padding: 15px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.price__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.section__title{
+  display: block;
+  padding: 10px;
+  background-color: rgb(161, 230, 230);
+  color: rgb(25, 34, 34);
+  text-decoration: none;
+  text-align: center;
+}
+.section__desk{
+  display: block;
+  padding: 10px;
+  background-color: rgb(161, 230, 230);
+  color: rgb(4, 12, 12);
+  text-decoration: none;
+  text-align: center;
+}
+.programs__title{
+  background-color: rgb(161, 230, 230);
+  text-align: center;
+}

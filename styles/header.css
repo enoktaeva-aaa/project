@@ -16,6 +16,11 @@
     background-color: rgb(163, 226, 202);
     color: rgb(255, 255, 255);
     text-decoration: none;
+    border-radius: 20px;
+   }
+
+   .menu__link:hover{
+    background-color: rgb(18, 207, 135);
    }
    .header__login{
     display: inline-block;
@@ -71,5 +76,6 @@
         color: black;
         font-size: 50px;
        }
+
          
     
