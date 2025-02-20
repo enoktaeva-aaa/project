@@ -118,3 +118,32 @@
   background-color: rgb(161, 230, 230);
   text-align: center;
 }
+.send__title{
+  display: block;
+  padding: 10px;
+  color: rgb(3, 2, 7);
+  text-decoration: none;
+  text-align: center;
+}
+.send__connection{
+  display: block;
+  padding: 10px;
+  color: rgb(3, 2, 7);
+  text-decoration: none;
+  text-align: center;
+}
+.send__form{
+  text-align: center;
+}
+
+.button{
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(163, 226, 202);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: none;
+}
+.button:hover{
+  background-color: rgb(18, 207, 135);
+ }

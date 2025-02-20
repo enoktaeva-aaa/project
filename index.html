@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <a class="header__title" href="#">Детское кафе</a>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Главная</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Меню</a></li>
+                <li class="menu__item"><a class="menu__link" href="#menu">Меню</a></li>
             </ul>
         </nav>
     </header>    
-        <main class="main">
+        <main class="main container">
             <!-- Секция о нас -->
             <section class="about"> 
                 <img class="about__image" src="images/edinorozhka.jpg" alt="единорожка" width="200" height="200"> Наше кафе — это место, где дети могут весело
@@ -64,7 +64,7 @@
 
             </section>
             <!-- Секция с меню -->
-            <section id="menu" class="section">
+            <section id="menu" class="section" id="menu">
                 <h2 class="section__title">Наше меню</h2>
                 <div class="price">
                     <ul class="price__list">
@@ -95,9 +95,18 @@
                         Мы предлагаем разнообразное меню и безопасную атмосферу для маленьких гостей.</p>
                 </div>
             </section>
+
+            <section class="section__send">
+                <h2 class="send__title">Оставьте заявку </h2>
+                <p class="send__connection">и наш менеджер свяжется с вами в ближайшее время</p>
+                <form class="send__form" action="/" method="get">
+                    <input class="send__form-name form__field" type="search" name="text" placeholder="ФИО....">
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </section>
             <!-- подвал -->
 
-            <footer class="footer">
+            <footer class="footer container">
                 <div class="about">
 
                 </div>
@@ -108,7 +117,7 @@
                     <p class="contakts__tekst">Email: info@detskokafe.ru</p>
                 </div>
             </footer>
-
+            <script src="scripts/script.js"></script>
 </body>
 
 </html>
