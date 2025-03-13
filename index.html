@@ -14,9 +14,9 @@
         <a class="header__title" href="#">Детское кафе</a>
         <nav class="header__menu">
             <ul class="menu">
-                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
                 <li class="menu__item"><a class="menu__link" href="#menu">Меню</a></li>
-                <li class="menu__send"><a class="menu__link menu__active" href="#">Оставить заявку</a></li>
+                <li class="menu__send"><button class="menu__link menu__button" href="#">Оставить заявку</button></li>
             </ul>
         </nav>
     </header>
@@ -102,13 +102,16 @@
             </div>
         </section>
 
-        <section class="section__send">
-            <h2 class="send__title">Оставьте заявку </h2>
-            <p class="send__connection">и наш менеджер свяжется с вами в ближайшее время</p>
-            <form class="send__form" action="/" method="get">
-                <input class="send__form-name form__field" type="search" name="text" placeholder="ФИО....">
-                <button class="button" type="submit">Отправить</button>
-            </form>
+        <section class="send" hidden>
+            <div class="send__wrapper">
+                <button class="send__close">закрыть</button>
+                <h2 class="send__title">Оставьте заявку </h2>
+                <p class="send__connection">и наш менеджер свяжется с вами в ближайшее время</p>
+                <form class="send__form" action="/" method="get">
+                    <input class="send__form-name form__field" type="search" name="text" placeholder="ФИО....">
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
         <!-- подвал -->
 

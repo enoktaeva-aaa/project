@@ -37,10 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
             aboutDescription.style.opacity = 0;
             aboutDescription.style.visibility = "hidden";
         });
-
-
-
-
     }
+    /* 2. Появление модальной формы заявки*/
+    const menuButton = document.querySelector('.menu__button');
+    const dialogSend = document.querySelector('.send');
+    if (menuButton && dialogSend) {
+        const sendButton = dialogSend.querySelector('.send__close');
+        menuButton.addEventListener('click', () => {
+            dialogSend.removeAttribute('hidden');
+        });
+        // Закрытие модального окна при клике на кнопку закрытия
+        sendButton.addEventListener('click', () => {
+            dialogSend.setAttribute('hidden', true);
+        });
+
+        // Закрытие модального окна при клике вне его области
+        window.addEventListener('click', (event) => {
+            if (event.target === dialogSend) {
+                dialogSend.setAttribute('hidden', true);
+            }
+        });
+    }
+
+
+
 }
 );

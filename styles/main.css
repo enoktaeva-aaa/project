@@ -131,7 +131,28 @@
   background-color: rgb(161, 230, 230);
   text-align: center;
 }
+.send{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+
+}
+.send__wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  transform: translate(-50%,-50%);
+  margin:  auto;
+  width: 600px;
+  background-color: #918989;
+
+}
 .send__title {
   display: block;
   padding: 10px;
