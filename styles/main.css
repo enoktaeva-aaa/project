@@ -1,6 +1,7 @@
 .about {
   display: flex;
   gap: 10px;
+  position: relative;
 }
 
 .about__wrap-right {
@@ -8,14 +9,23 @@
   flex-shrink: 0;
 }
 
+.about__desctription {
+  padding: 20px;
+  background-color: #bde9ec;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+
+}
+
 .about__job {
   min-width: 300px;
 }
 
 .about {
-  
+
   background-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
   padding: 10px;
 }
 
@@ -98,7 +108,8 @@
   justify-content: space-between;
   list-style-type: none;
 }
-.section__title{
+
+.section__title {
   display: block;
   padding: 10px;
   background-color: rgb(161, 230, 230);
@@ -106,7 +117,8 @@
   text-decoration: none;
   text-align: center;
 }
-.section__desk{
+
+.section__desk {
   display: block;
   padding: 10px;
   background-color: rgb(161, 230, 230);
@@ -114,29 +126,33 @@
   text-decoration: none;
   text-align: center;
 }
-.programs__title{
+
+.programs__title {
   background-color: rgb(161, 230, 230);
   text-align: center;
 }
-.send__title{
+
+.send__title {
   display: block;
   padding: 10px;
   color: rgb(3, 2, 7);
   text-decoration: none;
-  text-align: center;
-}
-.send__connection{
-  display: block;
-  padding: 10px;
-  color: rgb(3, 2, 7);
-  text-decoration: none;
-  text-align: center;
-}
-.send__form{
   text-align: center;
 }
 
-.button{
+.send__connection {
+  display: block;
+  padding: 10px;
+  color: rgb(3, 2, 7);
+  text-decoration: none;
+  text-align: center;
+}
+
+.send__form {
+  text-align: center;
+}
+
+.button {
   padding: 10px;
   margin: 5px;
   background-color: rgb(163, 226, 202);
@@ -144,6 +160,7 @@
   border-radius: 20px;
   border: none;
 }
-.button:hover{
+
+.button:hover {
   background-color: rgb(18, 207, 135);
- }
+}
