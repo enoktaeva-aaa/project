@@ -63,3 +63,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }
 );
+//Объявляем переменную cardsPrice и сохраняем в нее элемент с классом price
+const cardsPrice = document.querySelectorAll('.price__price');
+console.log(cardsPrice);
+// Если такой элемент существует
+if (cardsPrice) {
+
+//Создаем объект cardsPriceData, которая содержит данные для трех карточки.
+        const cardsPriceData = {
+// каждая ссылка содержит level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки).
+            0: {
+                weight: '100 грамм',
+                price: '350 ₽',
+               
+            },
+            1: {
+                weight: '1 шт',
+                price: '300 ₽',
+               
+            },
+            2: {
+                weight: '1 шт',
+                price: '260 ₽',
+              
+            }
+        }
+
+//Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки)
+        const createCard = (weight, price) => {
+// Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
+            const card = `
+        цена ${price} за ${weight}
+           
+        `;
+//  Возвращаем значение переменной card
+            return card;
+        }
+// Создаем цикл for и проходим по всем элементам объекта cardsPriceData.
+        for (const cardKey in cardsPriceData) {
+//Получаем данные одной карточки из объекта cardsPriceData 
+            const card = cardsPriceData[cardKey];
+//создаем переменную cardElement и вызываем функцию createLink, куда передаем тариф, цену, описание и кнопку (то, из чего будет состоять ваша карточка).
+            const cardElement = createCard(card.weight, card.price);
+
+// с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка priceList.
+cardsPrice[cardKey].innerHTML =  cardElement;
+        }
+}
