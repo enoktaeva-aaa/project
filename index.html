@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <h2 class="about__title">Режим работы </h2>
                 <p class="about__text">c 7:00 до 22:00</p>
             </div>
-            <p class="about__desctription" >Наше кафе — это место, где дети могут весело
+            <p class="about__desctription">Наше кафе — это место, где дети могут весело
                 провести время, наслаждаясь вкусной едой и играми. Мы предлагаем разнообразное меню и безопасную
                 атмосферу для маленьких гостей.</p>
         </section>
@@ -71,12 +73,45 @@
         <!-- Секция с меню -->
         <section id="menu" class="section" id="menu">
             <h2 class="section__title">Наше меню</h2>
-            <div class="price">
+            <div class="swiper  price">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="price__image" src="images/kakekrem.jpg" alt="торт крем" width="200" height="200">
+                        <h3 class="price__name">Шоколадный торт</h3>
+                        <p class="price__desk">Вкусный шоколадный торт с ягодами и кремом.</p>
+                        <p class="price__price">Цена 350 рублей за 100 грамм</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="price__image" src="images/fruktdesert.jpg" alt="фруктовые десерты" width="200"
+                            height="200">
+                        <h3 class="price__name">Фрукты и йогурт</h3>
+                        <p class="price__desk">Свежие фрукты с натуральным йогуртом. </p>
+                        <p class="price__price">Цена 300 рублей за 1 шт.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="price__image" src="images/fri.jpg" alt="фруктовые десерты" width="200" height="200">
+                        <h3 class="price__name">Картофель фри</h3>
+                        <p class="price__desk">Золотистый и хрустящий свежий картофель, приготовленный во фритюре. </p>
+                        <p class="price__price">Цена 260 рублей за 1 шт.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="price__image" src="images/morozhenoe.jpg" alt="мороженое" width="200" height="200">
+                        <h3 class="price__name">Мороженое</h3>
+                        <p class="price__desk">Разнообразие мороженого на любой вкус. </p>
+                        <p class="price__price"> Цена 260 рублей за 1 шт.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- <div class="price">
                 <ul class="price__list">
                     <li class="price__item">
                         <img class="price__image" src="images/kakekrem.jpg" alt="торт крем" width="200" height="200">
                         <h3 class="price__name">Шоколадный торт</h3>
-                        <p class="price__desk">Вкусный шоколадный торт с ягодами и кремом.</p>  
+                        <p class="price__desk">Вкусный шоколадный торт с ягодами и кремом.</p>
                         <p class="price__price">Цена 350 рублей за 100 грамм</p>
                     </li>
                     <li class="price__item">
@@ -87,8 +122,7 @@
                         <p class="price__price">Цена 300 рублей за 1 шт.</p>
                     </li>
                     <li class="price__item">
-                        <img class="price__image" src="images/fri.jpg" alt="фруктовые десерты" width="200"
-                            height="200">
+                        <img class="price__image" src="images/fri.jpg" alt="фруктовые десерты" width="200" height="200">
                         <h3 class="price__name">Картофель фри</h3>
                         <p class="price__desk">Золотистый и хрустящий свежий картофель, приготовленный во фритюре. </p>
                         <p class="price__price">Цена 260 рублей за 1 шт.</p>
@@ -97,18 +131,17 @@
                         <img class="price__image" src="images/morozhenoe.jpg" alt="мороженое" width="200" height="200">
                         <h3 class="price__name">Мороженое</h3>
                         <p class="price__desk">Разнообразие мороженого на любой вкус. </p>
-                        <p class="price__price"> Цена 260 рублей за 1 шт. 
-                    </p>
+                        <p class="price__price"> Цена 260 рублей за 1 шт.
+                        </p>
                     </li>
                 </ul>
-
-            </div>
+            </div> -->
         </section>
 
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section__title">О нас</h2>
-                <p class="section__desk">Детское кафе"Незабудка"- идеальное место для детских праздников.</p>
+                <p class="section__desk">Детское кафе"Незабудка"- идеальное место для детских праздников. Мы создаем волшебную атмосферу для ваших детей, где каждый визит превращается в незабываемое приключение. Приходите в наше кафе, и пусть каждый момент станет волшебным!</p>
             </div>
         </section>
 
@@ -136,6 +169,7 @@
                 <p class="contakts__tekst">Email: info@detskokafe.ru</p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="scripts/script.js"></script>
 </body>
 
